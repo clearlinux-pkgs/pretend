@@ -6,7 +6,7 @@
 #
 Name     : pretend
 Version  : 1.0.8
-Release  : 14
+Release  : 15
 URL      : https://pypi.python.org/packages/source/p/pretend/pretend-1.0.8.tar.gz
 Source0  : https://pypi.python.org/packages/source/p/pretend/pretend-1.0.8.tar.gz
 Source99 : https://pypi.python.org/packages/source/p/pretend/pretend-1.0.8.tar.gz.asc
