@@ -6,9 +6,9 @@
 #
 Name     : pretend
 Version  : 1.0.8
-Release  : 15
-URL      : https://pypi.python.org/packages/source/p/pretend/pretend-1.0.8.tar.gz
-Source0  : https://pypi.python.org/packages/source/p/pretend/pretend-1.0.8.tar.gz
+Release  : 16
+URL      : http://pypi.debian.net/pretend/pretend-1.0.8.tar.gz
+Source0  : http://pypi.debian.net/pretend/pretend-1.0.8.tar.gz
 Source99 : https://pypi.python.org/packages/source/p/pretend/pretend-1.0.8.tar.gz.asc
 Summary  : A library for stubbing in Python
 Group    : Development/Tools
@@ -21,10 +21,7 @@ BuildRequires : python3-dev
 BuildRequires : setuptools
 
 %description
-pretend
 =======
-.. image:: https://secure.travis-ci.org/alex/pretend.png
-:target: https://travis-ci.org/alex/pretend
 
 %package python
 Summary: python components for the pretend package.
@@ -38,20 +35,27 @@ python components for the pretend package.
 %setup -q -n pretend-1.0.8
 
 %build
+export http_proxy=http://127.0.0.1:9/
+export https_proxy=http://127.0.0.1:9/
+export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1484562861
+export SOURCE_DATE_EPOCH=1503072955
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1484562861
+export SOURCE_DATE_EPOCH=1503072955
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
+echo ----[ mark ]----
+cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
+echo ----[ mark ]----
 
 %files
 %defattr(-,root,root,-)
 
 %files python
 %defattr(-,root,root,-)
-/usr/lib/python*/*
+/usr/lib/python2*/*
+/usr/lib/python3*/*
