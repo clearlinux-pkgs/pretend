@@ -5,11 +5,12 @@ certbot
 cryptography
 ecdsa
 gensim
+josepy
 jupyter-notebook-gist
-keyring
 ndg_httpsclient
 paramiko
 pyOpenSSL
+python-zeep
 requests
 secretstorage
 smart_open
