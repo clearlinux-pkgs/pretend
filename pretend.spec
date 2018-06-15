@@ -17,7 +17,7 @@ Requires: pretend-python3
 Requires: pretend-python
 BuildRequires : pbr
 BuildRequires : pip
-BuildRequires : python-dev
+
 BuildRequires : python3-dev
 BuildRequires : setuptools
 
