@@ -4,7 +4,7 @@
 #
 Name     : pretend
 Version  : 1.0.9
-Release  : 30
+Release  : 31
 URL      : http://pypi.debian.net/pretend/pretend-1.0.9.tar.gz
 Source0  : http://pypi.debian.net/pretend/pretend-1.0.9.tar.gz
 Summary  : A library for stubbing in Python
