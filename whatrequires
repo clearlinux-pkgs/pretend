@@ -1,17 +1,2 @@
 # This file contains recursive sources that require this package
-acme
-ceph
-certbot
 cryptography
-ecdsa
-gensim
-josepy
-jupyter-notebook-gist
-ndg_httpsclient
-paramiko
-pyOpenSSL
-python-zeep
-requests
-secretstorage
-smart_open
-urllib3
