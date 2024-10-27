@@ -9,7 +9,7 @@
 #
 Name     : pretend
 Version  : 1.0.9
-Release  : 57
+Release  : 58
 URL      : http://pypi.debian.net/pretend/pretend-1.0.9.tar.gz
 Source0  : http://pypi.debian.net/pretend/pretend-1.0.9.tar.gz
 Source1  : http://pypi.debian.net/pretend/pretend-1.0.9.tar.gz.asc
